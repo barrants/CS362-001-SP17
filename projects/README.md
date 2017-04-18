@@ -1,2 +1,4 @@
-The projects directory should contains your onid folder
+This is barrants' repo.
+Full name: Shane Barrantes
+onid: barrants
 
