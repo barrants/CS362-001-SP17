@@ -22,7 +22,6 @@ public class CalDayTest {
 	 @Test
 	 public void test02()  throws Throwable  {
 	 	//GregorianCalendar calendar = new GregianCalendar(pdt);	 
-		
 		 int startHour=3;
                  int startMinute=-30;
                  int startDay=-10;
@@ -41,16 +40,16 @@ public class CalDayTest {
 
 		GregorianCalendar cal = new GregorianCalendar();
 		CalDay calday = new CalDay(cal);
-		calday.iterator();
+		assertNotNull(calday.iterator());
 		calday.addAppt(appt);
-		calday.isValid();
+		assertTrue(calday.isValid());
 		calday.getAppts();
-		calday.getSizeAppts();
-		calday.getDay();
-		calday.getMonth();
-		calday.getYear();
-		calday.toString();
-		calday.iterator();
+		assertNotNull(calday.getSizeAppts());
+		assertNotNull(calday.getDay());
+		assertNotNull(calday.getMonth());
+		assertNotNull(calday.getYear());
+		assertNotNull(calday.toString());
+		assertNotNull(calday.iterator());
 	 }
 	@Test
 	 public void test03()  throws Throwable  {
@@ -108,21 +107,21 @@ public class CalDayTest {
                          "the memest of the memes");
 		GregorianCalendar cal = new GregorianCalendar();
 		CalDay calday = new CalDay(cal);
-		calday.iterator();
+		assertNotNull(calday.iterator());
 		calday.addAppt(appt);
-		calday.isValid();
-		calday.getAppts();
+		assertTrue(calday.isValid());
+		assertNotNull(calday.getAppts());
 		calday.addAppt(appt2);
 		calday.addAppt(appt3);
 		calday.addAppt(appt4);
 		calday.addAppt(appt5);
 		calday.addAppt(appt6);
-		calday.getAppts();
-		calday.getSizeAppts();
-		calday.getDay();
-		calday.getMonth();
-		calday.getYear();
-		calday.toString();
-		calday.iterator();
+		assertNotNull(calday.getAppts());
+		assertNotNull(calday.getSizeAppts());
+		assertNotNull(calday.getDay());
+		assertNotNull(calday.getMonth());
+		assertNotNull(calday.getYear());
+		assertNotNull(calday.toString());
+		assertNotNull(calday.iterator());
 	 }
 }
